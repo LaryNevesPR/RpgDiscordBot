@@ -50,7 +50,9 @@ async def Criar_player(player):
         }
         await salve_json(alayers)
         return True
-@client.tree.command(name= "mod", description= "test")
+
+#Teste
+'''@client.tree.command(name= "mod", description= "test")
 async def Mod(interaction:discord.Integration):
     alayers = await Ler_Players()
     player = interaction.user
@@ -59,7 +61,7 @@ async def Mod(interaction:discord.Integration):
     print("passou")
     alayers[str(player.id)]["Mana"] = "🥵"
     await salve_json(alayers)
-    print ('p')
+    print ('p')'''
 
 
 @client.tree.command(name= "escolha", description = "Eu faço suas escolhas!")
